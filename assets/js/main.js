@@ -240,7 +240,29 @@ $(function() {
     });
     
     
-    
+    function countdown() {
+        var deadline = new Date('July 22, 2020 23:59:59').getTime();
+        var now = new Date().getTime();
+        var t = deadline - now;
+        var days = Math.floor(t/(1000*60*60*24));
+        var hours = Math.floor((t%(1000*60*60*24))/(1000*60*60));
+        var minutes = Math.floor((t%(1000*60*60))/(1000*60));
+        var seconds = Math.floor((t%(1000*60))/1000);
+        if (t <= 0) {
+          $('#days').html(0);
+          $('#hours').html(0);
+          $('#minutes').html(0);
+          $('#seconds').html(0);
+        } else {
+          $('#days').html(days);
+          $('#hours').html(hours);
+          $('#minutes').html(minutes);
+          $('#seconds').html(seconds);
+        }
+      }
+      $(window).on('load', function () {
+        setInterval(countdown, 1000);
+      });
     
     //=====  WOW active
     

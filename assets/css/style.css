@@ -2196,4 +2196,34 @@ p {
     .blog-ratting .ratting-list ul li a span {
       float: right; }
 
+      .numbox {
+        text-align: center;
+        max-width: 60px;
+        height: 45px;
+        padding: 0;
+        border-radius: 10px;
+      }
+      
+      .numbox_desciption {
+        text-align: center;
+        max-width: 60px;
+        padding: 0;
+      }
+      
+      .colon {
+        display: inline-block;
+        align-self: flex-end;
+        width: 6px;
+        font-size: 21px;
+      }
+      
+      #days, #hours, #minutes, #seconds {
+        font-size: 42px;
+        font-weight: 600;
+        color: #37352F;
+      }
+        #seconds {
+          color: #E03E3E;
+        }
+
 /*# sourceMappingURL=style.css.map */
