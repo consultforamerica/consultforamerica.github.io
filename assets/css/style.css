@@ -108,7 +108,7 @@ ul, ol {
   list-style-type: none; }
 
 p {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: #798795;
@@ -2225,5 +2225,30 @@ p {
         #seconds {
           color: #E03E3E;
         }
-
+        .accordion-section .panel-default > .panel-heading {
+          border: 0;
+          background: #f4f4f4;
+          padding: 0;
+      }
+      .accordion-section .panel-default .panel-title a {
+          display: block;
+          font-style: italic;
+          font-size: 1.5rem;
+          color: #f14836;
+      }
+      .accordion-section .panel-default .panel-title a:after {
+          font-family: 'FontAwesome';
+          font-style: normal;
+          font-size: 3rem;
+          content: "\f106";
+          color: #000;
+          float: right;
+          margin-top: -12px;
+      }
+      .accordion-section .panel-default .panel-title a.collapsed:after {
+          content: "\f107";
+      }
+      .accordion-section .panel-default .panel-body {
+          font-size: 1.2rem;
+      }
 /*# sourceMappingURL=style.css.map */
