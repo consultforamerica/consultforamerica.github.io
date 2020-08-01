@@ -2255,4 +2255,6 @@ p {
       .accordion-section .container{
       padding-bottom: 50px;
       }
+
+      #content img.alignRight {float:right; margin: 5px 15px 5px 0;}
 /*# sourceMappingURL=style.css.map */
